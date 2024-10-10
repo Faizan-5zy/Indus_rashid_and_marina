@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Indus_rashid_and_marina
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Real Estate Landing Page
 
-## Available Scripts
+This project is a responsive real estate landing page showcasing exclusive properties at **Rashid Yachts and Marina**. It is built using **React** and **Tailwind CSS** to deliver a sleek and modern UI with intuitive navigation.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Interactive Map**
+  - Integrated with Leaflet, displaying important locations such as the marina, seaside park, and luxury mall.
+  - Each marker shows descriptions and video snippets for enhanced user engagement.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Project Showcase**
+  - Dynamic property listings with hover effects.
+  - Displays additional details like price, overview, key features, and a call-to-action button upon hovering over a property.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Responsive Layout**
+  - Fully optimized for various screen sizes, ensuring a seamless experience on devices ranging from small screens (like iPhone SE) to larger desktop displays.
+  - Special behavior for small screens includes a collapsible menu.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: For building the user interface.
+- **Tailwind CSS**: For styling and responsive design.
+- **Framer Motion**: For animations and transitions.
+- **Leaflet**: For rendering the interactive map.
+- **React Icons**: For integrating icons like the menu toggle.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/real-estate-landing-page.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd real-estate-landing-page
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- View the landing page to explore exclusive properties, interact with the map, and learn more about each property.
+- Hover over a property in the showcase to reveal additional details and calls to action.
+- For mobile devices, the page is fully responsive, offering a collapsible menu for easy navigation.
