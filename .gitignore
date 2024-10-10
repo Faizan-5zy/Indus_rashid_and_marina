@@ -25,12 +25,6 @@ yarn-error.log*
 
 
 
-# Build files
-dist/
-build/
-
-
-
 # Parcel cache
 .cache/
 .parcel-cache/
