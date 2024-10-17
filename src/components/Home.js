@@ -38,7 +38,7 @@ const Home = () => {
             </motion.h1>
 
             <motion.h3
-              className="text-base sm:text-lg md:text-xl mt-4"
+              className="text-base sm:text-lg md:text-xl mt-4 font-semibold"
               initial={{ opacity: 0 }}
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 2 }}
@@ -50,27 +50,42 @@ const Home = () => {
         )}
 
         <div className="hidden md:flex flex-1  items-center ">
-          <motion.h3
+          {/* <motion.h3
             className="text-base sm:text-lg md:text-xl mt-4"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 2 }}
-          >
-            <button className="px-4 py-2 bg-none bg-opacity-50 hover:bg-blue-500 text-white rounded-lg">
+          > */}
+            <button className="px-4 py-2 bg-none bg-opacity-50  hover:text-white hover:bg-darkGold rounded-lg font-semibold">
+              <a
+              className="get-directions-btn"
+                href="#location">
+
               Take a Virtual Tour
+                </a>
             </button>
-            <button className="px-4 py-2 bg-none bg-opacity-50 hover:bg-blue-500 text-white rounded-lg">
+            <button className="px-4 py-2 bg-none bg-opacity-50  hover:text-white hover:bg-darkGold rounded-lg font-semibold">
+              <a
+              className="get-directions-btn"
+                href="#projects">
+
               Find Your Dream Home
+                </a>
             </button>
-            <button className="px-4 py-2 bg-none bg-opacity-50 hover:bg-blue-500 text-white rounded-lg">
+            <button className="px-4 py-2 bg-none bg-opacity-50  hover:text-white hover:bg-darkGold rounded-lg font-semibold">
+              <a
+              className="get-directions-btn"
+                href="#amenities">
+
               Discover the Marina Lifestyle
+                </a>
             </button>{" "}
-          </motion.h3>
+          {/* </motion.h3> */}
         </div>
 
         <button
           onClick={toggleMenu}
-          className=" px-4 py-2 bg-none bg-opacity-50 text-none rounded-lg md:hidden"
+          className="hidden px-4 py-2 bg-none bg-opacity-50 text-none rounded-lg md:hidden"
         >
           Menu
         </button>
@@ -105,7 +120,7 @@ const Home = () => {
 
       <div>
         <img
-          className="brightness-[0.7] object-cover w-full h-[50vh] md:h-[80vh] lg:h-[832px] max-w-full"
+          className="brightness-[0.4] object-cover w-full h-[50vh] md:h-[80vh] lg:h-[832px] max-w-full"
           src="https://cdn.properties.emaar.com/wp-content/uploads/2020/02/EMAAR_MinaRashid_CGI19_06-1620x832.jpg"
           alt="Marina"
         />

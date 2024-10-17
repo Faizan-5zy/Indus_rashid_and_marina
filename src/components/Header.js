@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from "react";
+// import React, { useRef, useState, useEffect } from "react";
+import React, {  useState, useEffect } from "react";
 import Logo from "./Logo";
+// import { motion, useInView } from "framer-motion";
+
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen((prev) => !prev);
@@ -49,28 +54,28 @@ const Header = () => {
           </button>
         </div>
 
+
         <nav className="hidden lg:flex items-center">
-          <ul className="flex gap-10 cursor-pointer">
-            <li>
-              <a
-                href="#home"
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
-              >
-                Home
-              </a>
-            </li>
+            {/* <motion.h3
+            className="text-base sm:text-lg md:text-xl mt-4"
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : {}}
+            transition={{ duration: 2 }}
+            > */}
+            <ul className="flex gap-10 cursor-pointer font-semibold">
+
             <li>
               <a
                 href="#about"
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
-              >
+                className="text-white hover:text-white hover:bg-darkGold py-2 px-4 rounded capitalize transition-transform transform hover:scale-110"
+                >
                 About
               </a>
             </li>
             <li>
               <a
                 href="#projects"
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:text-white hover:bg-darkGold py-2 px-4 rounded capitalize"
               >
                 Projects
               </a>
@@ -78,7 +83,7 @@ const Header = () => {
             <li>
               <a
                 href="#amenities"
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:text-white hover:bg-darkGold py-2 px-4 rounded capitalize"
               >
                 Amenities
               </a>
@@ -86,7 +91,7 @@ const Header = () => {
             <li>
               <a
                 href="#location"
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:text-white hover:bg-darkGold py-2 px-4 rounded capitalize"
               >
                 Location
               </a>
@@ -94,12 +99,14 @@ const Header = () => {
             <li>
               <a
                 href="#contact"
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:text-white hover:bg-darkGold py-2 px-4 rounded capitalize"
               >
                 Contact
               </a>
             </li>
           </ul>
+                {/* </motion.h3> */}
+
         </nav>
 
         <div
@@ -128,20 +135,12 @@ const Header = () => {
           </button>
 
           <ul className="flex flex-col gap-8 p-8 mt-20">
-            <li>
-              <a
-                href="#home"
-                onClick={toggleMobileMenu}
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
-              >
-                Home
-              </a>
-            </li>
+
             <li>
               <a
                 href="#about"
                 onClick={toggleMobileMenu}
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
               >
                 About
               </a>
@@ -150,7 +149,7 @@ const Header = () => {
               <a
                 href="#projects"
                 onClick={toggleMobileMenu}
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
               >
                 Projects
               </a>
@@ -159,7 +158,7 @@ const Header = () => {
               <a
                 href="#amenities"
                 onClick={toggleMobileMenu}
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
               >
                 Amenities
               </a>
@@ -168,7 +167,7 @@ const Header = () => {
               <a
                 href="#location"
                 onClick={toggleMobileMenu}
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
               >
                 Location
               </a>
@@ -177,9 +176,36 @@ const Header = () => {
               <a
                 href="#contact"
                 onClick={toggleMobileMenu}
-                className="text-white hover:bg-blue-500 py-2 px-4 rounded capitalize"
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
               >
                 Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="#location"
+                onClick={toggleMobileMenu}
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
+              >
+                Take a Virtual Tour
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onClick={toggleMobileMenu}
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
+              >
+                Find Your Dream Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#amenities"
+                onClick={toggleMobileMenu}
+                className="text-white hover:bg-darkGold py-2 px-0 rounded capitalize"
+              >
+                Discover the Marina Lifestyle
               </a>
             </li>
           </ul>
