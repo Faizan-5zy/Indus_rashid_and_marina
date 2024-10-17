@@ -36,7 +36,7 @@ const Projects = () => {
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className={`relative bg-blue-500 p-6 rounded-lg shadow-lg cursor-pointer transition-transform transform ${
+              className={`relative text-gray-500 bg-white p-6 rounded-lg shadow-lg transition-transform transform ${
                 activeProject === index
                   ? "scale-105 z-30"
                   : "hover:scale-105 z-10"
@@ -48,7 +48,7 @@ const Projects = () => {
               <p className="text-sm">{project.bedrooms}</p>
 
               {activeProject === index && (
-                <div className="absolute inset-0 bg-blue-500  rounded-lg z-30 w-full min-h-max p-4  flex flex-col justify-center items-center text-center">
+                <div className="absolute inset-0 text-gray-500 bg-white  rounded-lg z-30 w-full min-h-max p-4  flex flex-col justify-center items-center text-center">
                   <p className="text-base mb-4">{project.overview}</p>
                   {project.price && (
                     <p className="font-semibold mb-4">{project.price}</p>
@@ -56,9 +56,13 @@ const Projects = () => {
                   {project.keyFeature && (
                     <p className="italic mb-4">{project.keyFeature}</p>
                   )}
-                  <p className="text-indigo-600 bg-white rounded-lg font-bold">
-                    {project.cta}
-                  </p>
+                  {project.cta && (
+                      <p className="text-yellow-800 bg-yellow-100 text-sm font-semibold rounded-md p-4 m-4">
+                          {project.cta}
+                      </p>
+                  )}
+
+                  
                 </div>
               )}
             </div>
@@ -66,8 +70,10 @@ const Projects = () => {
         </div>
 
         <div className="mt-72">
-          <button className="bg-blue-600 text-white px-6 py-3 my-14 rounded-lg font-semibold hover:bg-blue-700 transition">
+          <button className="text-white  bg-gold px-6 py-3 my-14 rounded-lg font-semibold hover:bg-darkGold hover:text-white transition">
+           <a href="#contact" className="get-directions-btn">
             Reserve your dream home today!
+           </a>
           </button>
         </div>
       </div>

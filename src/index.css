@@ -12,17 +12,72 @@
 }
 
 body {
-  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
   background-size: 400% 400%;
-  animation: waterAnimation 10s ease infinite;
+  /* animation: waterAnimation 10s ease infinite; */
   font-family: "Poppins", sans-serif;
+  background-color: #2D2D2D; 
 }
+
 
 html {
   scroll-behavior: auto;
 }
 
 .map-wrapper {
-  max-width: 100%; 
-  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.popup-content h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.popup-content video {
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+button{
+  /* transform transition-all duration-300 ease-in-out hover:scale-105 */
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+a{
+  /* transform transition-all duration-300 ease-in-out hover:scale-105 */
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover{
+  transform:scale(1.05);
+  background-color:#4a90e2;
+}
+
+a:hover{
+  transform:scale(1.05);
+  background-color:#4a90e2;
+}
+
+
+
+/* 
+* {
+  outline: 1px solid red;
+} */
+
+
+
+
+.get-directions-btn {
+  text-decoration: none; /* Remove underline */
+  background-color: transparent; /* No background */
+  color: none; /* Default text color */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.get-directions-btn:hover {
+  color: none; /* Change text color on hover */
+  background-color: transparent; /* Ensure background stays transparent */
 }
